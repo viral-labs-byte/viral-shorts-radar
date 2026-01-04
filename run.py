@@ -1,3 +1,6 @@
+# BUILD: v447-ui (do not overwrite)
+# SOURCE OF TRUTH: GitHub main
+
 from flask import Flask, render_template_string, request, redirect, make_response
 import requests, re, time, uuid
 from datetime import datetime, timezone
@@ -445,3 +448,4 @@ def boost():
 
 if __name__ == "__main__":
     app.run()
+
