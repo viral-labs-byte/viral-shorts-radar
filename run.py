@@ -1,4 +1,4 @@
-# BUILD: v447-ui (do not overwrite)
+# BUILD: 26-01-04 v454-ui (do not overwrite)
 # SOURCE OF TRUTH: GitHub main
 
 from flask import Flask, render_template_string, request, redirect, make_response
@@ -143,8 +143,11 @@ a { color:var(--accent); text-decoration:none; }
   display:flex; justify-content:space-between; align-items:center;
   gap:12px; padding:14px 0 6px 0;
 }
-.brand{ font-weight:900; letter-spacing:.3px; }
+
+/* CHANGED: brand font size increased (only change) */
+.brand{ font-weight:900; letter-spacing:.3px; font-size:26px; }
 .brand span{ color:var(--accent); }
+
 .nav-right{ display:flex; gap:10px; align-items:center; flex-wrap:wrap; }
 .chip{
   background:var(--pill); color:#ddd; padding:8px 12px; border-radius:999px;
@@ -255,6 +258,7 @@ hr.sep{ border:0; border-top:1px solid #232323; margin:16px 0; }
 @media (max-width:520px){
   body{ padding:18px; }
   .h-title{ font-size:32px; }
+  .brand{ font-size:22px; }
 }
 </style>
 </head>
@@ -448,4 +452,3 @@ def boost():
 
 if __name__ == "__main__":
     app.run()
-
